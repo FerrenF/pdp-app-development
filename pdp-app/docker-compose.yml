@@ -1,0 +1,15 @@
+version: "3.4"
+services:
+ vite_docker:
+   image: node:latest
+   container_name: vite_docker
+   entrypoint: /bin/sh
+   ports:
+     - 8080:8080
+     - 8081:8081
+   working_dir: /webapp/code/pdp-app/src
+   volumes:
+     - type: bind
+       source: ./
+       target: /webapp/code/pdp-app/src
+   tty: true
