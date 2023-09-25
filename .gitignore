@@ -76,3 +76,4 @@
 
 # Uncomment if you don't want to check in your npm-shrinkwrap.json file
 # /pdp-app/npm-shrinkwrap.json
+pdp-app/.env
